@@ -1,5 +1,27 @@
 # changelog
 
+# 0.0.4 (August 7th, 2018)
+
+## Updated/Fixed
+
+![Screenshot](/images/program-page-redesign-0.0.4.png)
+
+New styling applied to `/program` profiles
+
+`/program` scopes moved from separate tabbed view to visible above the VDP
+
+Copy changed in `/program` Rewards table from 'Vulnerability Type' to 'Vulnerability Level'
+
+Made header sticky while scrolling `/program` VDP
+
+Light style changes applied within the wysiwyg editor of the `/program` creation/update form
+
+After submitting a report, you are now directed to the list of reports you have submitted instead of the dashboard's default view
+
+## Known Issues
+
+CSP can be improved and tightened
+
 # 0.0.3 (August 2nd, 2018)
 
 ## New
