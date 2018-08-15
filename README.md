@@ -1,5 +1,59 @@
 # changelog
 
+# 0.0.5 (August 12th, 2018)
+
+## New
+
+![Screenshot](/images/report-inbox-donut-0.0.5.png)
+
+A chart displaying report count by severity level has been added to the `/reports` inbox.
+
+The scope tables for each `/program` utilizes a toggle to switch between in/out.
+
+Added 404 page.
+
+Soft deletion and soft dependency deletion for everything.
+
+Sort scopes where they were missing (`created_at` asc).
+
+Added a review process for programs to go public.
+
+`GET api/roles` now returns `user_ids`.
+
+## Updated/Fixed
+
+![Screenshot](/images/program-scopes-slider-0.0.5.png)
+
+The scope section of `/program` has a slick new theme.
+
+Updated username and program name validation to limit types of characters accepted.
+
+Fixed `user.invited_by` was not being set in some cases.
+
+Fixed major issues with responsive mobile styling.
+
+Fixed gravatars in `/reports` inbox to sync with assignee.
+
+The CVSS rating module has been removed from all reports to simplify the submission process.
+
+The required fields of a report can no longer be left empty or edited and resubmitted with blank content.
+
+Fixed report assignment to allow selection of anyone given access within the program settings.
+
+Fixed the visibility of new comments when a report is first reopened.
+
+The `/reports` inbox now shows a custom message when returning zero results dependent on selected filter.
+
+The login process has been optimized for faster load-time.
+
+Implemented a fallback to ensure data is captured from the sign up form when the API is down.
+
+## Removed
+
+Overloading of invitations to allow multi-use invitations (this means an invitation can only be used once).
+
+Remediations, we'll circle back on this feature when we have time to do it justice.
+
 # 0.0.4 (August 7th, 2018)
 
 ## Updated/Fixed
