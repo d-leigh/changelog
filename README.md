@@ -1,5 +1,59 @@
 # changelog
 
+0.0.6 (August 20th, 2018)
+
+## New:
+
+![Screenshot](/images/signup-password-strength-indicator-0.0.6.png)
+
+Added a password strength indicator to the `/sign-up` page.
+
+Added Sentry for better error-tracking and real-time fixes.
+
+Added `Critical` as a priority level option for `/program scopes`.
+
+Added 'Featured On' section to the landing page.
+
+Added Open Graph tags.
+
+## Updated/Fixed:
+
+Permitted Facebook and Twitter sharing from browser extensions.
+
+Normalized `/login` to `/sign-up` and added redirect.
+
+Fixed `user=researcher` differentiation in the `join` form on the landing page.
+
+Desaturated logos on landing page, colorizing onHover.
+
+Optimized images to improve landing page load-time.
+
+Loosened input validation for `/program` name to allow `.`, `&` and `+`.
+
+Improved validation for `email address` fields in `auth` forms.
+
+Rearranged the 'invite to program' sections of the `/program` editor by hierarchy of `role` permissions.
+
+Added error notification for exceeding invites while adding new users through the `/program` editor.
+
+Updated `/report` comment style and added time since post.
+
+Modified error notifications for edge cases to be more descriptive.
+
+Fixed navigation from `/programs` to `/reports` to display inbox instead of the new report form.
+
+Fixed a bug with adding and deleting `roles`.
+
+Updated `/report` assignment to sync with API `role` changes.
+
+Improved onboarding experience and emails.
+
+Resolved rack-attack issue and re-enabled.
+
+## Removed:
+
+Removed public user search field from the 'invite to program' sections of the `/program` editor.
+
 # 0.0.5 (August 12th, 2018)
 
 ## New
