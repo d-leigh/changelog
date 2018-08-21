@@ -1,6 +1,6 @@
 # changelog
 
-0.0.6 (August 20th, 2018)
+# 0.0.6 (August 20th, 2018)
 
 ## New:
 
