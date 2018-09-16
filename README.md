@@ -1,8 +1,62 @@
 # changelog
 
-0.0.6 (August 20th, 2018)
+# 0.0.7 (September 16th, 2018)
 
-## New:
+## New
+
+![Screenshot](/images/report-award-section-0.0.7.png)
+
+Added an `award` section to individual reports.
+
+Added `user` gravatars to the report assignment field.
+
+Added important report-related email notification triggers.
+
+Added `/program scope` selection to individual reports.
+
+Added icons that indicate type of change to a report's activity log.
+
+Added [vue-lazyload](https://github.com/hilongjw/vue-lazyload) to images on `homepage` to improve page load time.
+
+Added [redirect-ssl](https://www.npmjs.com/package/redirect-ssl) to improve `SSL` handling on older browser clients.
+
+Added [Web Font Loader](https://github.com/typekit/webfontloader) to improve typeface handling.
+
+Added URL redirection for `/reports/:id` upon successful `/sign-in`.
+
+## Updated/Fixed
+
+![Screenshot](/images/report-timeline-0.0.7.png)
+
+Redesigned layout and styling for individual reports.
+
+Implemented a friendlier report update interface.
+
+Merged the submitted report and program's report into a single view.
+
+Moved the report comment system into a single view.
+
+Renamed `History` to `Timeline` for a report's activity log.
+
+Changed `timestamp` format for a report's activity log.
+
+Provided a method to collapse a report's activity log.
+
+Compressed `homepage` images with `webp` to load on smaller screens.
+
+Floated form-response notifications to improve visibility.
+
+Switched `datetime` handling from [moment.js](https://github.com/moment/moment) to [date-fns](https://github.com/date-fns/date-fns).
+
+## Removed
+
+Removed option to edit an original report after it has been submitted.
+
+Removed `user` gravatars from the report's activity log.
+
+# 0.0.6 (August 20th, 2018)
+
+## New
 
 ![Screenshot](/images/signup-password-strength-indicator-0.0.6.png)
 
@@ -16,7 +70,7 @@ Added 'Featured On' section to the landing page.
 
 Added Open Graph tags.
 
-## Updated/Fixed:
+## Updated/Fixed
 
 Permitted Facebook and Twitter sharing from browser extensions.
 
@@ -50,7 +104,7 @@ Improved onboarding experience and emails.
 
 Resolved rack-attack issue and re-enabled.
 
-## Removed:
+## Removed
 
 Removed public user search field from the 'invite to program' sections of the `/program` editor.
 
