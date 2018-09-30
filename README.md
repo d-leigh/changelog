@@ -1,5 +1,65 @@
 # changelog
 
+# 0.0.8 (October 11th, 2018)
+
+## New
+
+![Screenshot](/images/profile-editor-0.0.8.png)
+
+Added section to the `/profile` editor below `user settings`  for researchers to complete.
+
+Added `/billing` page with subscription plans.
+
+Added public `/researchers` list for subscribers with `search` and `filter` functionality.
+
+Added public researcher profiles accessible from `/researchers` list for subscribers.
+
+Added ability to `invite` a researcher to your `/program` from `/researchers` list and their corresponding profile page.
+
+![Screenshot](/images/researcher-profile-0.0.8.png)
+
+## Updated/Fixed
+
+Fixed `/network` table styling.
+
+Renamed `visibility` field in `/profile` editor to clarify its function.
+
+Moved `visibility` toggle from `user settings` to `researcher profile` section of `/profile` editor.
+
+Updated `users` endpoint to include connected `users` through `programs` and `reports`.
+
+Fixed missing `user activation` mailers.
+
+Redesigned layout and styling for individual `reports`.
+
+Moved `Award` section to `Reward` action that opens a modal in individual `reports`.
+
+Merged the `comment` system into a single module in individual `reports`.
+
+Combined the submitted report and program's report into a single panel that is switchable via link.
+
+Renamed `Timeline` to `Activity` in individual `reports`.
+
+![Screenshot](/images/report-view-0.0.8.png)
+
+## Removed
+
+Removed `role.gravatar` from `api/roles`.
+
+Removed ability for `inactive users` to send invitations through the `/network` page.
+
+Removed ability for `inactive users` to make their profile `public`.
+
+Removed ability for researchers to `create programs`.
+
+Removed `priority` selection from individual `reports`.
+
+## Known Issues
+
+A notification email indicating your `password` has been changed is triggered when any `user settings` are updated.
+
+The `reward` user interface can be improved and does not account for `swag` rewards.
+
 # 0.0.7 (September 16th, 2018)
 
 ## New
