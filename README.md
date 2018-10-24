@@ -1,5 +1,47 @@
 # changelog
 
+# 0.0.9 (October 24th, 2018)
+
+## New
+
+Added pagination to `/researchers` page.
+
+Added field to select number of items displayed on `/researchers` page.
+
+Added URL persistence through sign-in for authenticated routes.
+
+Added container overflow control for `description` section of report content.
+
+## Updated/Fixed
+
+Changed copy in various components and modules to improve UX.
+
+Fixed form interaction and `update` notifications in `/programs` editor.
+
+Improved responsive design of report pages on mobile devices.
+
+Addressed report `activity` logging bug that occasionally posted incorrect action.
+
+Fixed `gravatar` displayed for awarder of bounty in `activity` log of a report.
+
+Updated program invite-related mailers with minor copyedits.
+
+Switched mailers to send from `team@federacy.com` for better support handling.
+
+## Removed
+
+Removed `Create Program` button from the UI for researchers.
+
+Removed `/network` page access for `inactive` users.
+
+Removed firing of notification mailers for a program's auto-generated example report.
+
+## Known Issues
+
+A notification email indicating your `password` has been changed is triggered when any `user settings` are updated.
+
+The `reward` UI can be improved.
+
 # 0.0.8 (October 11th, 2018)
 
 ## New
