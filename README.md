@@ -1,5 +1,32 @@
 # changelog
 
+# 0.0.10 (November 6th, 2018)
+
+## Updated/Fixed
+
+Fixed formatting for `program report` when in read-mode.
+
+## Security
+
+Made `invitation` codes single-use to prevent limit bypass.  
+_☆ reported by reymarkdivino_
+
+Addressed homograph attack vulnerability.   
+_☆ reported by reymarkdivino_
+
+Remediated open redirect weakness.   
+_☆ reported by ali_
+
+## Known Issues
+
+A notification email indicating your `password` has been changed is triggered when any `user settings` are updated.
+
+Hyperlinks missing protocol in the url do not resolve to external website.
+
+The `program report` editing experience can be improved.
+
+The `reward` interface can be improved.
+
 # 0.0.9 (October 24th, 2018)
 
 ## New
@@ -40,7 +67,7 @@ Removed firing of notification mailers for a program's auto-generated example re
 
 A notification email indicating your `password` has been changed is triggered when any `user settings` are updated.
 
-The `reward` UI can be improved.
+The `reward` interface can be improved.
 
 # 0.0.8 (October 11th, 2018)
 
