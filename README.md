@@ -1,5 +1,50 @@
 # changelog
 
+# 0.0.11 (December 1st, 2018)
+
+## New
+
+Added internal `admin` controls and views.
+
+Added unsaved changes alert when navigating from `report`.
+
+Added notice about brevity to transactional emails.
+
+## Updated/Fixed
+
+![Screenshot](/images/report-tooltips-and-editing.png)
+
+Moved `program report` field descriptions to tooltips.
+
+Addressed state issues after updating `report` severity or status.
+
+Improved `report` editing interface.
+
+Improved navigation from `report` back to `/reports` inbox.
+
+Separated `/account` settings from `/profile` editor.
+
+Fixed formatting of blog hyperlink on `researcher profile`.
+
+Fixed website hyperlink redirect loop on `program` pages.
+
+Changed formatting of original `report` to render line breaks.
+
+## Security
+
+Fixed bypassing homograph attack using /@.	
+_☆  reported by reymarkdivino_
+
+## Known Issues
+
+A notification email indicating your `password` has been changed is triggered when any `/account` settings are updated.
+
+The `program visibility` mechanics can be improved.
+
+The `reward` interface for a `report` can be improved.
+
+Program maintainers do not have access to the `report` options panel for reports they submit to their own program.
+
 # 0.0.10 (November 6th, 2018)
 
 ## Updated/Fixed
@@ -8,13 +53,16 @@ Fixed formatting for `program report` when in read-mode.
 
 ## Security
 
-Made `invitation` codes single-use to prevent limit bypass.  
+Made `invitation` codes single-use to prevent limit bypass.	
 _☆ reported by reymarkdivino_
 
-Addressed homograph attack vulnerability.   
+Addressed homograph attack vulnerability.	
 _☆ reported by reymarkdivino_
 
-Remediated open redirect weakness.   
+Fixed invitation token leakage via referer header.	
+_☆  reported by reymarkdivino_
+
+Remediated open redirect weakness.	
 _☆ reported by ali_
 
 ## Known Issues
