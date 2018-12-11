@@ -1,5 +1,35 @@
 # changelog
 
+# 0.0.12 (December 10th, 2018)
+
+## New
+
+![Screenshot](/images/report-inbox-new-filters-and-awarded-column.png)
+
+Added more filters to `/reports` inbox.
+
+Added `awarded` column to `/reports` inbox tabular data.
+
+Added ability for program maintainers to submit and triage their own reports.
+
+## Updated/Fixed
+
+Fixed occasional empty `status` upon report creation.
+
+Refined filtering of reports by `status` in `/reports` inbox.
+
+## Removed
+
+Removed report submission button from `/reports` inbox.
+
+## Known Issues
+
+A notification email indicating your `password` has been changed is triggered when any `/account` settings are updated.
+
+The `program` visibility mechanics can be improved.
+
+The `reward` interface of a `program report` can be improved.
+
 # 0.0.11 (December 1st, 2018)
 
 ## New
