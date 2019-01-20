@@ -1,446 +1,545 @@
-# changelog
+# Federacy Changelog
 
-# 0.0.12 (December 10th, 2018)
+## 1.0.0 (January 19th, 2019)
 
-## New
+**Added**
 
-![Screenshot](/images/report-inbox-new-filters-and-awarded-column.png)
+<kbd><img src="/images/onboarding-selection-screen-1.0.0.png" /></kbd>
 
-Added more filters to `/reports` inbox.
+- program and researcher guided setup
 
-Added `awarded` column to `/reports` inbox tabular data.
+- user sessions with httpOnly cookies & CSRF tokens
 
-Added ability for program maintainers to submit and triage their own reports.
+- email address confirmation requirement
 
-## Updated/Fixed
+<kbd><img src="/images/programs-page-metrics-1.0.0.png" /></kbd>
 
-Fixed occasional empty `status` upon report creation.
+- performance metrics & launch date in `/programs` list
 
-Refined filtering of reports by `status` in `/reports` inbox.
+- tabbed navigation to `/program` profiles
 
-## Removed
+- "known issues" editor to `/program` profiles
 
-Removed report submission button from `/reports` inbox.
+<kbd><img src="/images/report-award-payment-modal-1.0.0.png" /></kbd>
 
-## Known Issues
+- payment handling for programs to issue awards
 
-A notification email indicating your `password` has been changed is triggered when any `/account` settings are updated.
+- new columns in `/reports` inbox
 
-The `program` visibility mechanics can be improved.
+<kbd><img src="/images/payments-payment-history-1.0.0.png" /></kbd>
 
-The `reward` interface of a `program report` can be improved.
+- "payment history" feed to `/payments`
 
-# 0.0.11 (December 1st, 2018)
+**Updated**
 
-## New
+<kbd><img src="/images/program-awards-table-1.0.0.png" /></kbd>
 
-Added internal `admin` controls and views.
+- "awards" table moved from VDP to its own section
 
-Added unsaved changes alert when navigating from `report`.
+<kbd><img src="/images/program-editor-scopes-setup-1.0.0.png" /></kbd>
 
-Added notice about brevity to transactional emails.
+- scopes table redesigned & editing simplified
 
-## Updated/Fixed
+- program roles reconfigured
 
-![Screenshot](/images/report-tooltips-and-editing.png)
+- filters applied in `/reports` inbox persist while browsing
 
-Moved `program report` field descriptions to tooltips.
+<kbd><img src="/images/researcher-onboarding-reporting-limits-update-1.0.0.png" /></kbd>
 
-Addressed state issues after updating `report` severity or status.
+- weekly reporting cap lifted once researcher is "vetted" by system
 
-Improved `report` editing interface.
+- hyperlinked URLs in researcher's `/report` view
 
-Improved navigation from `report` back to `/reports` inbox.
+<kbd><img src="/images/account-change-password-modal-1.0.0.png" /></kbd>
 
-Separated `/account` settings from `/profile` editor.
+- "password change" functionality moved into modal
 
-Fixed formatting of blog hyperlink on `researcher profile`.
+- form field validations & alerts have been improved
 
-Fixed website hyperlink redirect loop on `program` pages.
+<kbd><img src="/images/researcher-profile-redesign-1.0.0.png" /></kbd>
 
-Changed formatting of original `report` to render line breaks.
+- new theme for `/researcher` profiles
 
-## Security
+**Removed**
 
-Fixed bypassing homograph attack using /@.	
-_☆  reported by reymarkdivino_
+- `/network` invites outside of programs
 
-## Known Issues
+- tabbed `/program` editor
 
-A notification email indicating your `password` has been changed is triggered when any `/account` settings are updated.
+- wysiwyg VDP editor in `program` editor
 
-The `program visibility` mechanics can be improved.
+- `/program` gravatars
 
-The `reward` interface for a `report` can be improved.
+- public visibility toggle in `/program` editor
 
-Program maintainers do not have access to the `report` options panel for reports they submit to their own program.
+- payout options for researchers other than PayPal
 
-# 0.0.10 (November 6th, 2018)
+- waitlist for new program sign-up
 
-## Updated/Fixed
+- subscription plans for private programs
 
-Fixed formatting for `program report` when in read-mode.
+**Fixed**
 
-## Security
+- public visibility toggle in `/profile` editor
 
-Made `invitation` codes single-use to prevent limit bypass.	
-_☆ reported by reymarkdivino_
+- `submitted report` status displayed to the researcher
 
-Addressed homograph attack vulnerability.	
-_☆ reported by reymarkdivino_
+**Security**
 
-Fixed invitation token leakage via referer header.	
-_☆  reported by reymarkdivino_
+- various `IDOR` vulns identified and remediated  
+	_reported by reymarkdivino_
 
-Remediated open redirect weakness.	
-_☆ reported by ali_
+- improperly repaired `SPF misconfiguration` remedied  
+	_reported by japz_
 
-## Known Issues
+- `unsafe-inline` resolved for CSP `script-src` & `style-src`  
+	_reported by ali_
 
-A notification email indicating your `password` has been changed is triggered when any `user settings` are updated.
+**Known Issues [UX]**
 
-Hyperlinks missing protocol in the url do not resolve to external website.
+- session not invalidated on email address or password change
 
-The `program report` editing experience can be improved.
+## 0.0.12 (December 10th, 2018)
 
-The `reward` interface can be improved.
+**Added**
 
-# 0.0.9 (October 24th, 2018)
+<kbd><img src="/images/report-inbox-new-filters-and-awarded-column.png" /></kbd>
 
-## New
+- Added more filters to `/reports` inbox.
 
-Added pagination to `/researchers` page.
+- Added `awarded` column to `/reports` inbox tabular data.
 
-Added field to select number of items displayed on `/researchers` page.
+- Added ability for program maintainers to submit and triage their own reports.
 
-Added URL persistence through sign-in for authenticated routes.
+**Updated/Fixed**
 
-Added container overflow control for `description` section of report content.
+- Fixed occasional empty `status` upon report creation.
 
-## Updated/Fixed
+- Refined filtering of reports by `status` in `/reports` inbox.
 
-Changed copy in various components and modules to improve UX.
+**Removed**
 
-Fixed form interaction and `update` notifications in `/programs` editor.
+- Removed report submission button from `/reports` inbox.
 
-Improved responsive design of report pages on mobile devices.
+**Known Issues**
 
-Addressed report `activity` logging bug that occasionally posted incorrect action.
+- A notification email indicating your `password` has been changed is triggered when any `/account` settings are updated.
 
-Fixed `gravatar` displayed for awarder of bounty in `activity` log of a report.
+- The `program` visibility mechanics can be improved.
 
-Updated program invite-related mailers with minor copyedits.
+- The `reward` interface of a `program report` can be improved.
 
-Switched mailers to send from `team@federacy.com` for better support handling.
+## 0.0.11 (December 1st, 2018)
 
-## Removed
+**Added**
 
-Removed `Create Program` button from the UI for researchers.
+- Added internal `admin` controls and views.
 
-Removed `/network` page access for `inactive` users.
+- Added unsaved changes alert when navigating from `report`.
 
-Removed firing of notification mailers for a program's auto-generated example report.
+- Added notice about brevity to transactional emails.
 
-## Known Issues
+**Updated/Fixed**
 
-A notification email indicating your `password` has been changed is triggered when any `user settings` are updated.
+<kbd><img src="/images/report-tooltips-and-editing.png" /></kbd>
 
-The `reward` interface can be improved.
+- Moved `program report` field descriptions to tooltips.
 
-# 0.0.8 (October 11th, 2018)
+- Addressed state issues after updating `report` severity or status.
 
-## New
+- Improved `report` editing interface.
 
-![Screenshot](/images/profile-editor-0.0.8.png)
+- Improved navigation from `report` back to `/reports` inbox.
 
-Added section to the `/profile` editor below `user settings`  for researchers to complete.
+- Separated `/account` settings from `/profile` editor.
 
-Added `/billing` page with subscription plans.
+- Fixed formatting of blog hyperlink on `researcher profile`.
 
-Added public `/researchers` list for subscribers with `search` and `filter` functionality.
+- Fixed website hyperlink redirect loop on `program` pages.
 
-Added public researcher profiles accessible from `/researchers` list for subscribers.
+- Changed formatting of original `report` to render line breaks.
 
-Added ability to `invite` a researcher to your `/program` from `/researchers` list and their corresponding profile page.
+**Security**
 
-![Screenshot](/images/researcher-profile-0.0.8.png)
+- Fixed bypassing homograph attack using /@.  
+	_reported by reymarkdivino_
 
-## Updated/Fixed
+**Known Issues**
 
-Fixed `/network` table styling.
+- A notification email indicating your `password` has been changed is triggered when any `/account` settings are updated.
 
-Renamed `visibility` field in `/profile` editor to clarify its function.
+- The `program visibility` mechanics can be improved.
 
-Moved `visibility` toggle from `user settings` to `researcher profile` section of `/profile` editor.
+- The `reward` interface for a `report` can be improved.
 
-Updated `users` endpoint to include connected `users` through `programs` and `reports`.
+- Program maintainers do not have access to the `report` options panel for reports they submit to their own program.
 
-Fixed missing `user activation` mailers.
+## 0.0.10 (November 6th, 2018)
 
-Redesigned layout and styling for individual `reports`.
+**Updated/Fixed**
 
-Moved `Award` section to `Reward` action that opens a modal in individual `reports`.
+- Fixed formatting for `program report` when in read-mode.
 
-Merged the `comment` system into a single module in individual `reports`.
+**Security**
 
-Combined the submitted report and program's report into a single panel that is switchable via link.
+- Made `invitation` codes single-use to prevent limit bypass.  
+	_reported by reymarkdivino_
 
-Renamed `Timeline` to `Activity` in individual `reports`.
+- Addressed homograph attack vulnerability.  
+	_reported by reymarkdivino_
 
-![Screenshot](/images/report-view-0.0.8.png)
+- Fixed invitation token leakage via referer header.  
+	_reported by reymarkdivino_
 
-## Removed
+- Remediated open redirect weakness.  
+	_reported by ali_
 
-Removed `role.gravatar` from `api/roles`.
+**Known Issues**
 
-Removed ability for `inactive users` to send invitations through the `/network` page.
+- A notification email indicating your `password` has been changed is triggered when any `user settings` are updated.
 
-Removed ability for `inactive users` to make their profile `public`.
+- Hyperlinks missing protocol in the url do not resolve to external website.
 
-Removed ability for researchers to `create programs`.
+- The `program report` editing experience can be improved.
 
-Removed `priority` selection from individual `reports`.
+- The `reward` interface can be improved.
 
-## Known Issues
+## 0.0.9 (October 24th, 2018)
 
-A notification email indicating your `password` has been changed is triggered when any `user settings` are updated.
+**Added**
 
-The `reward` user interface can be improved and does not account for `swag` rewards.
+- Added pagination to `/researchers` page.
 
-# 0.0.7 (September 16th, 2018)
+- Added field to select number of items displayed on `/researchers` page.
 
-## New
+- Added URL persistence through sign-in for authenticated routes.
 
-![Screenshot](/images/report-award-section-0.0.7.png)
+- Added container overflow control for `description` section of report content.
 
-Added an `award` section to individual reports.
+**Updated/Fixed**
 
-Added `user` gravatars to the report assignment field.
+- Changed copy in various components and modules to improve UX.
 
-Added important report-related email notification triggers.
+- Fixed form interaction and `update` notifications in `/programs` editor.
 
-Added `/program scope` selection to individual reports.
+- Improved responsive design of report pages on mobile devices.
 
-Added icons that indicate type of change to a report's activity log.
+- Addressed report `activity` logging bug that occasionally posted incorrect action.
 
-Added [vue-lazyload](https://github.com/hilongjw/vue-lazyload) to images on `homepage` to improve page load time.
+- Fixed `gravatar` displayed for awarder of bounty in `activity` log of a report.
 
-Added [redirect-ssl](https://www.npmjs.com/package/redirect-ssl) to improve `SSL` handling on older browser clients.
+- Updated program invite-related mailers with minor copyedits.
 
-Added [Web Font Loader](https://github.com/typekit/webfontloader) to improve typeface handling.
+- Switched mailers to send from `team@federacy.com` for better support handling.
 
-Added URL redirection for `/reports/:id` upon successful `/sign-in`.
+**Removed**
 
-## Updated/Fixed
+- Removed `Create Program` button from the UI for researchers.
 
-![Screenshot](/images/report-timeline-0.0.7.png)
+- Removed `/network` page access for `inactive` users.
 
-Redesigned layout and styling for individual reports.
+- Removed firing of notification mailers for a program's auto-generated example report.
 
-Implemented a friendlier report update interface.
+**Known Issues**
 
-Merged the submitted report and program's report into a single view.
+- A notification email indicating your `password` has been changed is triggered when any `user settings` are updated.
 
-Moved the report comment system into a single view.
+- The `reward` interface can be improved.
 
-Renamed `History` to `Timeline` for a report's activity log.
+## 0.0.8 (October 11th, 2018)
 
-Changed `timestamp` format for a report's activity log.
+**Added**
 
-Provided a method to collapse a report's activity log.
+<kbd><img src="/images/profile-editor-0.0.8.png" /></kbd>
 
-Compressed `homepage` images with `webp` to load on smaller screens.
+- Added section to the `/profile` editor below `user settings`  for researchers to complete.
 
-Floated form-response notifications to improve visibility.
+- Added `/billing` page with subscription plans.
 
-Switched `datetime` handling from [moment.js](https://github.com/moment/moment) to [date-fns](https://github.com/date-fns/date-fns).
+- Added public `/researchers` list for subscribers with `search` and `filter` functionality.
 
-## Removed
+- Added public researcher profiles accessible from `/researchers` list for subscribers.
 
-Removed option to edit an original report after it has been submitted.
+- Added ability to `invite` a researcher to your `/program` from `/researchers` list and their corresponding profile page.
 
-Removed `user` gravatars from the report's activity log.
+<kbd><img src="/images/researcher-profile-0.0.8.png" /></kbd>
 
-# 0.0.6 (August 20th, 2018)
+**Updated/Fixed**
 
-## New
+- Fixed `/network` table styling.
 
-![Screenshot](/images/signup-password-strength-indicator-0.0.6.png)
+- Renamed `visibility` field in `/profile` editor to clarify its function.
 
-Added a password strength indicator to the `/sign-up` page.
+- Moved `visibility` toggle from `user settings` to `researcher profile` section of `/profile` editor.
 
-Added Sentry for better error-tracking and real-time fixes.
+- Updated `users` endpoint to include connected `users` through `programs` and `reports`.
 
-Added `Critical` as a priority level option for `/program scopes`.
+- Fixed missing `user activation` mailers.
 
-Added 'Featured On' section to the landing page.
+- Redesigned layout and styling for individual `reports`.
 
-Added Open Graph tags.
+- Moved `Award` section to `Reward` action that opens a modal in individual `reports`.
 
-## Updated/Fixed
+- Merged the `comment` system into a single module in individual `reports`.
 
-Permitted Facebook and Twitter sharing from browser extensions.
+- Combined the submitted report and program's report into a single panel that is switchable via link.
 
-Normalized `/login` to `/sign-up` and added redirect.
+- Renamed `Timeline` to `Activity` in individual `reports`.
 
-Fixed `user=researcher` differentiation in the `join` form on the landing page.
+<kbd><img src="/images/report-view-0.0.8.png" /></kbd>
 
-Desaturated logos on landing page, colorizing onHover.
+**Removed**
 
-Optimized images to improve landing page load-time.
+- Removed `role.gravatar` from `api/roles`.
 
-Loosened input validation for `/program` name to allow `.`, `&` and `+`.
+- Removed ability for `inactive users` to send invitations through the `/network` page.
 
-Improved validation for `email address` fields in `auth` forms.
+- Removed ability for `inactive users` to make their profile `public`.
 
-Rearranged the 'invite to program' sections of the `/program` editor by hierarchy of `role` permissions.
+- Removed ability for researchers to `create programs`.
 
-Added error notification for exceeding invites while adding new users through the `/program` editor.
+- Removed `priority` selection from individual `reports`.
 
-Updated `/report` comment style and added time since post.
+**Known Issues**
 
-Modified error notifications for edge cases to be more descriptive.
+- A notification email indicating your `password` has been changed is triggered when any `user settings` are updated.
 
-Fixed navigation from `/programs` to `/reports` to display inbox instead of the new report form.
+- The `reward` user interface can be improved and does not account for `swag` rewards.
 
-Fixed a bug with adding and deleting `roles`.
+## 0.0.7 (September 16th, 2018)
 
-Updated `/report` assignment to sync with API `role` changes.
+**Added**
 
-Improved onboarding experience and emails.
+<kbd><img src="/images/report-award-section-0.0.7.png" /></kbd>
 
-Resolved rack-attack issue and re-enabled.
+- Added an `award` section to individual reports.
 
-## Removed
+- Added `user` gravatars to the report assignment field.
 
-Removed public user search field from the 'invite to program' sections of the `/program` editor.
+- Added important report-related email notification triggers.
 
-# 0.0.5 (August 12th, 2018)
+- Added `/program scope` selection to individual reports.
 
-## New
+- Added icons that indicate type of change to a report's activity log.
 
-![Screenshot](/images/report-inbox-donut-0.0.5.png)
+- Added [vue-lazyload](https://github.com/hilongjw/vue-lazyload) to images on `homepage` to improve page load time.
 
-A chart displaying report count by severity level has been added to the `/reports` inbox.
+- Added [redirect-ssl](https://www.npmjs.com/package/redirect-ssl) to improve `SSL` handling on older browser clients.
 
-The scope tables for each `/program` utilizes a toggle to switch between in/out.
+- Added [Web Font Loader](https://github.com/typekit/webfontloader) to improve typeface handling.
 
-Added 404 page.
+- Added URL redirection for `/reports/:id` upon successful `/sign-in`.
 
-Soft deletion and soft dependency deletion for everything.
+**Updated/Fixed**
 
-Sort scopes where they were missing (`created_at` asc).
+<kbd><img src="/images/report-timeline-0.0.7.png" /></kbd>
 
-Added a review process for programs to go public.
+- Redesigned layout and styling for individual reports.
 
-`GET api/roles` now returns `user_ids`.
+- Implemented a friendlier report update interface.
 
-## Updated/Fixed
+- Merged the submitted report and program's report into a single view.
 
-![Screenshot](/images/program-scopes-slider-0.0.5.png)
+- Moved the report comment system into a single view.
 
-The scope section of `/program` has a slick new theme.
+- Renamed `History` to `Timeline` for a report's activity log.
 
-Updated username and program name validation to limit types of characters accepted.
+- Changed `timestamp` format for a report's activity log.
 
-Fixed `user.invited_by` was not being set in some cases.
+- Provided a method to collapse a report's activity log.
 
-Fixed major issues with responsive mobile styling.
+- Compressed `homepage` images with `webp` to load on smaller screens.
 
-Fixed gravatars in `/reports` inbox to sync with assignee.
+- Floated form-response notifications to improve visibility.
 
-The CVSS rating module has been removed from all reports to simplify the submission process.
+- Switched `datetime` handling from [moment.js](https://github.com/moment/moment) to [date-fns](https://github.com/date-fns/date-fns).
 
-The required fields of a report can no longer be left empty or edited and resubmitted with blank content.
+**Removed**
 
-Fixed report assignment to allow selection of anyone given access within the program settings.
+- Removed option to edit an original report after it has been submitted.
 
-Fixed the visibility of new comments when a report is first reopened.
+- Removed `user` gravatars from the report's activity log.
 
-The `/reports` inbox now shows a custom message when returning zero results dependent on selected filter.
+## 0.0.6 (August 20th, 2018)
 
-The login process has been optimized for faster load-time.
+**Added**
 
-Implemented a fallback to ensure data is captured from the sign up form when the API is down.
+<kbd><img src="/images/signup-password-strength-indicator-0.0.6.png" /></kbd>
 
-## Removed
+- Added a password strength indicator to the `/sign-up` page.
 
-Overloading of invitations to allow multi-use invitations (this means an invitation can only be used once).
+- Added Sentry for better error-tracking and real-time fixes.
 
-Remediations, we'll circle back on this feature when we have time to do it justice.
+- Added `Critical` as a priority level option for `/program scopes`.
 
-# 0.0.4 (August 7th, 2018)
+- Added 'Featured On' section to the landing page.
 
-## Updated/Fixed
+- Added Open Graph tags.
 
-![Screenshot](/images/program-page-redesign-0.0.4.png)
+**Updated/Fixed**
 
-New styling applied to `/program` profiles
+- Permitted Facebook and Twitter sharing from browser extensions.
 
-`/program` scopes moved from separate tabbed view to visible above the VDP
+- Normalized `/login` to `/sign-up` and added redirect.
 
-Copy changed in `/program` Rewards table from 'Vulnerability Type' to 'Vulnerability Level'
+- Fixed `user=researcher` differentiation in the `join` form on the landing page.
 
-Made header sticky while scrolling `/program` VDP
+- Desaturated logos on landing page, colorizing onHover.
 
-Light style changes applied within the wysiwyg editor of the `/program` creation/update form
+- Optimized images to improve landing page load-time.
 
-After submitting a report, you are now directed to the list of reports you have submitted instead of the dashboard's default view
+- Loosened input validation for `/program` name to allow `.`, `&` and `+`.
 
-## Known Issues
+- Improved validation for `email address` fields in `auth` forms.
 
-CSP can be improved and tightened
+- Rearranged the 'invite to program' sections of the `/program` editor by hierarchy of `role` permissions.
 
-# 0.0.3 (August 2nd, 2018)
+- Added error notification for exceeding invites while adding new users through the `/program` editor.
 
-## New
+- Updated `/report` comment style and added time since post.
 
-![Screenshot](/images/report-inbox-0.0.3.png)
+- Modified error notifications for edge cases to be more descriptive.
 
-First pass at `/reports` re-design 
+- Fixed navigation from `/programs` to `/reports` to display inbox instead of the new report form.
 
-Critical priority for reports
+- Fixed a bug with adding and deleting `roles`.
 
-Sqreen for Content Security Policy and other headers for `www.federacy.com`
+- Updated `/report` assignment to sync with API `role` changes.
 
-[Vulnerability Disclosure Policy](https://github.com/federacy/vulnerability-disclosure-policy) posted to github using the Creative Commons Attribution Share Alike license. 
+- Improved onboarding experience and emails.
 
-## Updated/Fixed
+- Resolved rack-attack issue and re-enabled.
 
-Template VDP Rewards Copy and Table
+**Removed**
 
-Clean up `/network` and invitations list
+- Removed public user search field from the 'invite to program' sections of the `/program` editor.
 
-## Known Issues
+## 0.0.5 (August 12th, 2018)
 
-CSP can be improved and tightened
+**Added**
 
-# 0.0.2 (July 31st, 2018)
+<kbd><img src="/images/report-inbox-donut-0.0.5.png" /></kbd>
 
-## New
+- A chart displaying report count by severity level has been added to the `/reports` inbox.
 
-Content Security Policy, CORs, and some denial of service mitigations for `api.federacy.com`
+- The scope tables for each `/program` utilizes a toggle to switch between in/out.
 
-Password reset functionality
+- Added 404 page.
 
-## Removed
+- Soft deletion and soft dependency deletion for everything.
 
-Points as a scope reward, because this functionality has not yet implemented
+- Sort scopes where they were missing (`created_at` asc).
 
-## Updated/Fixed
+- Added a review process for programs to go public.
 
-Resolved ssues with invitations, roles, and reports
+- `GET api/roles` now returns `user_ids`.
 
-Improved policies, scopes, and routes to be more restrictive, and resolved a multitude of bugs created in the process
+**Updated/Fixed**
 
-Improve email copy for invitations, activations, and signups
+<kbd><img src="/images/program-scopes-slider-0.0.5.png" /></kbd>
 
-## Known Issues
+- The scope section of `/program` has a slick new theme.
 
-rack-attack ip tracking using proxy addresses instead of end-user
+- Updated username and program name validation to limit types of characters accepted.
 
-invitations have been overloaded to support a single invitation being used many times (for HN post)
+- Fixed `user.invited_by` was not being set in some cases.
 
-# 0.0.1 (July 11th, 2018)
+- Fixed major issues with responsive mobile styling.
 
-Private alpha launch on Bookface!
+- Fixed gravatars in `/reports` inbox to sync with assignee.
+
+- The CVSS rating module has been removed from all reports to simplify the submission process.
+
+- The required fields of a report can no longer be left empty or edited and resubmitted with blank content.
+
+- Fixed report assignment to allow selection of anyone given access within the program settings.
+
+- Fixed the visibility of new comments when a report is first reopened.
+
+- The `/reports` inbox now shows a custom message when returning zero results dependent on selected filter.
+
+- The login process has been optimized for faster load-time.
+
+- Implemented a fallback to ensure data is captured from the sign up form when the API is down.
+
+**Removed**
+
+- Overloading of invitations to allow multi-use invitations (this means an invitation can only be used once).
+
+- Remediations, we'll circle back on this feature when we have time to do it justice.
+
+## 0.0.4 (August 7th, 2018)
+
+**Updated/Fixed**
+
+<kbd><img src="/images/program-page-redesign-0.0.4.png" /></kbd>
+
+- New styling applied to `/program` profiles
+
+- `/program` scopes moved from separate tabbed view to visible above the VDP
+
+- Copy changed in `/program` Rewards table from 'Vulnerability Type' to 'Vulnerability Level'
+
+- Made header sticky while scrolling `/program` VDP
+
+- Light style changes applied within the wysiwyg editor of the `/program` creation/update form
+
+- After submitting a report, you are now directed to the list of reports you have submitted instead of the dashboard's default view
+
+**Known Issues**
+
+- CSP can be improved and tightened
+
+## 0.0.3 (August 2nd, 2018)
+
+**Added**
+
+<kbd><img src="/images/report-inbox-0.0.3.png" /></kbd>
+
+- First pass at `/reports` re-design 
+
+- Critical priority for reports
+
+- Sqreen for Content Security Policy and other headers for `www.federacy.com`
+
+- [Vulnerability Disclosure Policy](https://github.com/federacy/vulnerability-disclosure-policy) posted to github using the Creative Commons Attribution Share Alike license. 
+
+**Updated/Fixed**
+
+- Template VDP Rewards Copy and Table
+
+- Clean up `/network` and invitations list
+
+**Known Issues**
+
+- CSP can be improved and tightened
+
+## 0.0.2 (July 31st, 2018)
+
+**Added**
+
+- Content Security Policy, CORs, and some denial of service mitigations for `api.federacy.com`
+
+- Password reset functionality
+
+**Removed**
+
+- Points as a scope reward, because this functionality has not yet implemented
+
+**Updated/Fixed**
+
+- Resolved ssues with invitations, roles, and reports
+
+- Improved policies, scopes, and routes to be more restrictive, and resolved a multitude of bugs created in the process
+
+- Improve email copy for invitations, activations, and signups
+
+**Known Issues**
+
+- rack-attack ip tracking using proxy addresses instead of end-user
+
+- invitations have been overloaded to support a single invitation being used many times (for HN post)
+
+## 0.0.1 (July 11th, 2018)
+
+- Private alpha launch on Bookface!
