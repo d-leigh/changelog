@@ -1,6 +1,7 @@
 # Federacy Changelog
 
-*[[1.0.0]] , 
+*[[1.1.0]] , 
+[[1.0.0]] , 
 [[0.0.12]] , 
 [[0.0.11]] , 
 [[0.0.10]] , 
@@ -14,6 +15,7 @@
 [[0.0.2]] , 
 [[0.0.1]]*
 
+[1.1.0]: #110-january-23rd-2019
 [1.0.0]: #100-january-19th-2019
 [0.0.12]: #0012-december-10th-2018
 [0.0.11]: #0011-december-1st-2018
@@ -27,6 +29,93 @@
 [0.0.3]: #003-august-2nd-2018
 [0.0.2]: #002-july-31st-2018
 [0.0.1]: #001-july-11th-2018
+
+
+<br/>&nbsp;
+
+
+## 1.1.0 (January 23rd, 2019)
+
+
+### Added
+
+- in-place editing for `/program` VDP with Markdown support
+
+- `/sign-up` notification of existing user account
+
+- error notification during `/program` creation if `slug` is taken
+
+- usernames and gravatars of `users` invited to `/program`
+
+- researchers can be invited to `/program` by email address
+
+
+### Changed
+
+- migrated from HTML to Markdown for VDP copy
+
+- `updated_at` attributes touched when children objects are updated/created
+
+- `/program` roles and scopes editable in-place
+
+
+### Removed
+
+- `/program` setup access after program creation
+
+- `program_name` and `slug` editing within UI
+
+
+### Fixed
+
+- "All Programs" filter in `/reports` to include programs to which you have reported regardless of current role
+
+- resolution of URL redirection through `/sign-in`
+
+- `payment history` of reports awarded by you that were submitted to programs you are no longer active in
+
+- `payment history` of awards issued by your teammates
+
+- change periods to dashes in `slug` if present in `program_name`
+
+- `/researcher` profiles with `null` attributes are visible
+
+- `submitted report` can be viewed even if `program` has been `deleted`
+
+- `program` contract acceptance validation
+
+
+### Security
+
+- require ASCII-only URLs to mitigate IDN homograph vulnerabilities  
+_reported by reymarkdivino_
+
+- stronger password validation throughout site to improve user security (HIBP integration)
+
+
+### Design
+
+- mobile UI and copy tweaks
+
+- VDP beautification
+
+- redirection flow (routing) improvements upon `/sign-in` or revisiting `/` during session
+
+- information display and UX improvements for `/researchers` list and `/researcher` profiles
+
+
+### Policies
+
+- timeliness notice appended to `new report` email notification
+
+- user agreements and policies communicated during program setup and researcher onboarding available in [help center]
+
+[help center]: https://help.federacy.com
+
+
+### Known Issues
+
+- session not invalidated on email address or password change
 
 
 <br/>
