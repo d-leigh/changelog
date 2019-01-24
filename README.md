@@ -39,13 +39,13 @@
 
 ### Added
 
-- in-place editing for `/program` VDP with Markdown support
+- in-place editing for `/program` VDP with Markdown support **[[1.1.0-01]]**
 
 - `/sign-up` notification of existing user account
 
 - error notification during `/program` creation if `slug` is taken
 
-- usernames and gravatars of `users` invited to `/program`
+- usernames and gravatars of `users` invited to `/program` **[[1.1.0-02]]**
 
 - researchers can be invited to `/program` by email address
 
@@ -56,7 +56,7 @@
 
 - `updated_at` attributes touched when children objects are updated/created
 
-- `/program` roles and scopes editable in-place
+- `/program` roles and scopes editable in-place **[[1.1.0-03]]**
 
 
 ### Removed
@@ -90,7 +90,7 @@
 - require ASCII-only URLs to mitigate IDN homograph vulnerabilities  
 _reported by reymarkdivino_
 
-- stronger password validation throughout site to improve user security (HIBP integration)
+- stronger password validation throughout site to improve user security (HIBP integration) **[[1.1.0-04]]**
 
 
 ### Design
@@ -116,6 +116,11 @@ _reported by reymarkdivino_
 ### Known Issues
 
 - session not invalidated on email address or password change
+
+[1.1.0-01]: ./images/program-vdp-editor-markdown-1.1.0.png
+[1.1.0-02]: ./images/program-admins-manager-1.1.0.png
+[1.1.0-03]: ./images/program-scopes-editor-1.1.0.png
+[1.1.0-04]: ./images/signup-password-validation-hibp-1.1.0.png
 
 
 <br/>
@@ -234,7 +239,7 @@ _reported by reymarkdivino_
 
 - Added ability for program maintainers to submit and triage their own reports.
 
-[0.0.12-01]: ./images/report-inbox-new-filters-and-awarded-column.png
+[0.0.12-01]: ./images/report-inbox-new-filters-and-awarded-column-0.0.12.png
 
 
 ### Updated/Fixed
@@ -291,7 +296,7 @@ _reported by reymarkdivino_
 
 - Changed formatting of original `report` to render line breaks.
 
-[0.0.11-01]: ./images/report-tooltips-and-editing.png
+[0.0.11-01]: ./images/report-tooltips-and-editing-0.0.11.png
 
 
 ### Security
@@ -406,11 +411,11 @@ _reported by reymarkdivino_
 
 ### Added
 
-- Added section to the `/profile` editor below `user settings` for researchers to complete. **[[0.0.8-01]**
+- Added section to the `/profile` editor below `user settings` for researchers to complete. **[[0.0.8-01]]**
 
 - Added `/billing` page with subscription plans.
 
-- Added public `/researchers` list for subscribers with `search` and `filter` functionality. **[[0.0.8-02]**
+- Added public `/researchers` list for subscribers with `search` and `filter` functionality. **[[0.0.8-02]]**
 
 - Added public researcher profiles accessible from `/researchers` list for subscribers.
 
@@ -483,13 +488,17 @@ _reported by reymarkdivino_
 
 - Added icons that indicate type of change to a report's activity log.
 
-- Added [vue-lazyload](https://github.com/hilongjw/vue-lazyload) to images on `homepage` to improve page load time.
+- Added [vue-lazyload] to images on `homepage` to improve page load time.
 
-- Added [redirect-ssl](https://www.npmjs.com/package/redirect-ssl) to improve `SSL` handling on older browser clients.
+- Added [redirect-ssl] to improve `SSL` handling on older browser clients.
 
-- Added [Web Font Loader](https://github.com/typekit/webfontloader) to improve typeface handling.
+- Added [Web Font Loader] to improve typeface handling.
 
 - Added URL redirection for `/reports/:id` upon successful `/sign-in`.
+
+[vue-lazyload]: https://github.com/hilongjw/vue-lazyload
+[redirect-ssl]: https://www.npmjs.com/package/redirect-ssl
+[Web Font Loader]: https://github.com/typekit/webfontloader
 
 [0.0.7-01]: ./images/report-award-section-0.0.7.png
 
