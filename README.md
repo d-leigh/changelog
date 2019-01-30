@@ -1,6 +1,7 @@
 # Federacy Changelog
 
-*[[1.1.0]] , 
+*[[1.1.1]] ,
+[[1.1.0]] , 
 [[1.0.0]] , 
 [[0.0.12]] , 
 [[0.0.11]] , 
@@ -15,6 +16,7 @@
 [[0.0.2]] , 
 [[0.0.1]]*
 
+[1.1.1]: #111-january-30th-2019
 [1.1.0]: #110-january-23rd-2019
 [1.0.0]: #100-january-19th-2019
 [0.0.12]: #0012-december-10th-2018
@@ -29,6 +31,57 @@
 [0.0.3]: #003-august-2nd-2018
 [0.0.2]: #002-july-31st-2018
 [0.0.1]: #001-july-11th-2018
+
+
+<br/>&nbsp;
+
+## 1.1.1 (January 30th, 2019)
+
+
+### Added
+
+- pagination to `/programs` tables **[[1.1.1-01]]**
+
+- tagline field to `/program` profile **[[1.1.1-02]]**
+
+- agreements section to `/account` for quick reference of accepted policies **[[1.1.1-03]]**
+
+
+### Changed
+
+- tabbed navigation to selection box for mobile displays on `/program` profile **[[1.1.1-04]]**
+
+- placeholder copy for `/program` "Admins" & "Researchers" invitation fields.
+
+- selection field for filtering "All Programs" in `/reports` inbox to searchable
+
+
+### Fixed
+
+- scrolling glitch present on `/program` profile at certain window sizes
+
+- "Awarded" total for multiple awards on a single report in `/reports` table
+
+- onscreen notification message missing after successful `award POST`
+
+- `/payments` history to display username of awarded researcher from user account after program deletion
+
+- fee-charging on `award` transactions for non-reusable sources
+
+
+### Security
+
+- session invalidated and user signed out after `password reset`
+
+
+### Known Issues
+
+- session not invalidated on email address change
+
+[1.1.1-01]: ./images/programs-pagination-1.1.1.png
+[1.1.1-02]: ./images/program-tagline-editor-1.1.1.png
+[1.1.1-03]: ./images/account-agreements-section-1.1.1.png
+[1.1.1-04]: ./images/program-tab-selection-mobile-1.1.1.png
 
 
 <br/>&nbsp;
@@ -123,7 +176,7 @@ _reported by reymarkdivino_
 [1.1.0-04]: ./images/signup-password-validation-hibp-1.1.0.png
 
 
-<br/>
+<br/>&nbsp;
 
 
 ## 1.0.0 (January 19th, 2019)
@@ -141,18 +194,19 @@ _reported by reymarkdivino_
 
 - tabbed navigation to `/program` profiles
 
-- "known issues" editor to `/program` profiles
+- "known issues" editor to `/program` profiles **[[1.0.0-03]]**
 
-- payment handling for programs to issue awards **[[1.0.0-03]]**
+- payment handling for programs to issue awards **[[1.0.0-04]]**
 
 - new columns in `/reports` inbox
 
-- "payment history" feed to `/payments` **[[1.0.0-04]]**
+- "payment history" feed to `/payments` **[[1.0.0-05]]**
 
 [1.0.0-01]: ./images/onboarding-selection-screen-1.0.0.png
 [1.0.0-02]: ./images/programs-page-metrics-1.0.0.png
-[1.0.0-03]: ./images/report-award-payment-modal-1.0.0.png
-[1.0.0-04]: ./images/payments-payment-history-1.0.0.png
+[1.0.0-03]: ./images/program-profile-known-issues-1.0.0.png
+[1.0.0-04]: ./images/report-award-payment-modal-1.0.0.png
+[1.0.0-05]: ./images/payments-payment-history-1.0.0.png
 
 
 ### Updated
@@ -220,9 +274,17 @@ _reported by reymarkdivino_
 	_reported by ali_
 
 
+### Documentation
+
+- API and product [documentation] for `awards`
+
+
 ### Known Issues
 
 - session not invalidated on email address or password change
+
+
+[documentation]: https://github.com/federacy/documentation
 
 
 <br/>&nbsp;
