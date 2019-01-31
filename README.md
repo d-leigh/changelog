@@ -1,6 +1,7 @@
 # Federacy Changelog
 
-*[[1.1.1]] ,
+*[[1.1.2]] ,
+[[1.1.1]] ,
 [[1.1.0]] , 
 [[1.0.0]] , 
 [[0.0.12]] , 
@@ -16,6 +17,7 @@
 [[0.0.2]] , 
 [[0.0.1]]*
 
+[1.1.2]: #112-january-31st-2019
 [1.1.1]: #111-january-30th-2019
 [1.1.0]: #110-january-23rd-2019
 [1.0.0]: #100-january-19th-2019
@@ -35,6 +37,50 @@
 
 <br/>&nbsp;
 
+
+## 1.1.2 (January 31st, 2019)
+
+
+### Added
+
+- form to homepage for scheduling a call **[[1.1.2-01]]**
+
+- more platform features to homepage
+
+- targets tested as "What we test" to homepage
+
+
+### Changed
+
+- platform description on homepage
+
+- position of "Featured on" section on homepage
+
+- table search speed improved for `/reports` inbox
+
+
+### Fixed
+
+- twitter hyperlink in footer to direct to `@_federacy`
+
+- top navigation responsiveness at `~1000px width`
+
+
+### Design
+
+- tab navigation centered on `/program` profile **[[1.1.2-02]]**
+
+- refresh of homepage **[[before]]** **[[after]]**
+
+[1.1.2-01]: ./images/homepage-schedule-a-call-1.1.2.png?raw=true
+[1.1.2-02]: ./images/program-profile-center-ab-nav-1.1.2.png?raw=true
+[before]: ./images/homepage-before-refresh-1.1.2.png?raw=true
+[after]: ./images/homepage-after-refresh-1.1.2.png?raw=true
+
+
+<br/>&nbsp;
+
+
 ## 1.1.1 (January 30th, 2019)
 
 
@@ -53,7 +99,7 @@
 
 - placeholder copy for `/program` "Admins" & "Researchers" invitation fields.
 
-- selection field for filtering "All Programs" in `/reports` inbox to searchable
+- selection field for filtering "All Programs" in `/reports` inbox to searchable **[[1.1.1-05]]**
 
 
 ### Fixed
@@ -78,10 +124,11 @@
 
 - session not invalidated on email address change
 
-[1.1.1-01]: ./images/programs-pagination-1.1.1.png
-[1.1.1-02]: ./images/program-tagline-editor-1.1.1.png
-[1.1.1-03]: ./images/account-agreements-section-1.1.1.png
-[1.1.1-04]: ./images/program-tab-selection-mobile-1.1.1.png
+[1.1.1-01]: ./images/programs-pagination-1.1.1.png?raw=true
+[1.1.1-02]: ./images/program-tagline-editor-1.1.1.png?raw=true
+[1.1.1-03]: ./images/account-agreements-section-1.1.1.png?raw=true
+[1.1.1-04]: ./images/program-tab-selection-mobile-1.1.1.png?raw=true
+[1.1.1-05]: ./images/reports-all-programs-selection-search-filter-1.1.1.png?raw=true
 
 
 <br/>&nbsp;
@@ -170,10 +217,10 @@ _reported by reymarkdivino_
 
 - session not invalidated on email address or password change
 
-[1.1.0-01]: ./images/program-vdp-editor-markdown-1.1.0.png
-[1.1.0-02]: ./images/program-admins-manager-1.1.0.png
-[1.1.0-03]: ./images/program-scopes-editor-1.1.0.png
-[1.1.0-04]: ./images/signup-password-validation-hibp-1.1.0.png
+[1.1.0-01]: ./images/program-vdp-editor-markdown-1.1.0.png?raw=true
+[1.1.0-02]: ./images/program-admins-manager-1.1.0.png?raw=true
+[1.1.0-03]: ./images/program-scopes-editor-1.1.0.png?raw=true
+[1.1.0-04]: ./images/signup-password-validation-hibp-1.1.0.png?raw=true
 
 
 <br/>&nbsp;
@@ -202,11 +249,11 @@ _reported by reymarkdivino_
 
 - "payment history" feed to `/payments` **[[1.0.0-05]]**
 
-[1.0.0-01]: ./images/onboarding-selection-screen-1.0.0.png
-[1.0.0-02]: ./images/programs-page-metrics-1.0.0.png
-[1.0.0-03]: ./images/program-profile-known-issues-1.0.0.png
-[1.0.0-04]: ./images/report-award-payment-modal-1.0.0.png
-[1.0.0-05]: ./images/payments-payment-history-1.0.0.png
+[1.0.0-01]: ./images/onboarding-selection-screen-1.0.0.png?raw=true
+[1.0.0-02]: ./images/programs-page-metrics-1.0.0.png?raw=true
+[1.0.0-03]: ./images/program-profile-known-issues-1.0.0.png?raw=true
+[1.0.0-04]: ./images/report-award-payment-modal-1.0.0.png?raw=true
+[1.0.0-05]: ./images/payments-payment-history-1.0.0.png?raw=true
 
 
 ### Updated
@@ -229,11 +276,11 @@ _reported by reymarkdivino_
 
 - new theme for `/researcher` profiles **[[1.0.0-09]]**
 
-[1.0.0-05]: ./images/program-awards-table-1.0.0.png
-[1.0.0-06]: ./images/program-editor-scopes-setup-1.0.0.png
-[1.0.0-07]: ./images/researcher-onboarding-reporting-limits-update-1.0.0.png
-[1.0.0-08]: ./images/account-change-password-modal-1.0.0.png
-[1.0.0-09]: ./images/researcher-profile-redesign-1.0.0.png
+[1.0.0-05]: ./images/program-awards-table-1.0.0.png?raw=true
+[1.0.0-06]: ./images/program-editor-scopes-setup-1.0.0.png?raw=true
+[1.0.0-07]: ./images/researcher-onboarding-reporting-limits-update-1.0.0.png?raw=true
+[1.0.0-08]: ./images/account-change-password-modal-1.0.0.png?raw=true
+[1.0.0-09]: ./images/researcher-profile-redesign-1.0.0.png?raw=true
 
 
 ### Removed
@@ -301,7 +348,7 @@ _reported by reymarkdivino_
 
 - Added ability for program maintainers to submit and triage their own reports.
 
-[0.0.12-01]: ./images/report-inbox-new-filters-and-awarded-column-0.0.12.png
+[0.0.12-01]: ./images/report-inbox-new-filters-and-awarded-column-0.0.12.png?raw=true
 
 
 ### Updated/Fixed
@@ -358,7 +405,7 @@ _reported by reymarkdivino_
 
 - Changed formatting of original `report` to render line breaks.
 
-[0.0.11-01]: ./images/report-tooltips-and-editing-0.0.11.png
+[0.0.11-01]: ./images/report-tooltips-and-editing-0.0.11.png?raw=true
 
 
 ### Security
@@ -483,8 +530,8 @@ _reported by reymarkdivino_
 
 - Added ability to `invite` a researcher to your `/program` from `/researchers` list and their corresponding profile page.
 
-[0.0.8-01]: ./images/profile-editor-0.0.8.png
-[0.0.8-02]: ./images/researcher-profile-0.0.8.png
+[0.0.8-01]: ./images/profile-editor-0.0.8.png?raw=true
+[0.0.8-02]: ./images/researcher-profile-0.0.8.png?raw=true
 
 
 ### Updated/Fixed
@@ -509,7 +556,7 @@ _reported by reymarkdivino_
 
 - Renamed `Timeline` to `Activity` in individual `reports`.
 
-[0.0.8-03]: ./images/report-view-0.0.8.png
+[0.0.8-03]: ./images/report-view-0.0.8.png?raw=true
 
 
 ### Removed
@@ -562,7 +609,7 @@ _reported by reymarkdivino_
 [redirect-ssl]: https://www.npmjs.com/package/redirect-ssl
 [Web Font Loader]: https://github.com/typekit/webfontloader
 
-[0.0.7-01]: ./images/report-award-section-0.0.7.png
+[0.0.7-01]: ./images/report-award-section-0.0.7.png?raw=true
 
 
 ### Updated/Fixed
@@ -590,7 +637,7 @@ _reported by reymarkdivino_
 [moment.js]: https://github.com/moment/moment
 [date-fns]: https://github.com/date-fns/date-fns
 
-[0.0.7-02]: ./images/report-timeline-0.0.7.png
+[0.0.7-02]: ./images/report-timeline-0.0.7.png?raw=true
 
 
 ### Removed
@@ -618,7 +665,7 @@ _reported by reymarkdivino_
 
 - Added Open Graph tags.
 
-[0.0.6-01]: ./images/signup-password-strength-indicator-0.0.6.png
+[0.0.6-01]: ./images/signup-password-strength-indicator-0.0.6.png?raw=true
 
 
 ### Updated/Fixed
@@ -683,7 +730,7 @@ _reported by reymarkdivino_
 
 - `GET api/roles` now returns `user_ids`.
 
-[0.0.5-01]: ./images/report-inbox-donut-0.0.5.png
+[0.0.5-01]: ./images/report-inbox-donut-0.0.5.png?raw=true
 
 
 ### Updated/Fixed
@@ -712,7 +759,7 @@ _reported by reymarkdivino_
 
 - Implemented a fallback to ensure data is captured from the sign up form when the API is down.
 
-[0.0.5-02]: ./images/program-scopes-slider-0.0.5.png
+[0.0.5-02]: ./images/program-scopes-slider-0.0.5.png?raw=true
 
 
 ### Removed
@@ -742,7 +789,7 @@ _reported by reymarkdivino_
 
 - After submitting a report, you are now directed to the list of reports you have submitted instead of the dashboard's default view
 
-[0.0.4-01]: ./images/program-page-redesign-0.0.4.png
+[0.0.4-01]: ./images/program-page-redesign-0.0.4.png?raw=true
 
 
 ### Known Issues
@@ -765,7 +812,7 @@ _reported by reymarkdivino_
 
 [Vulnerability Disclosure Policy]: https://github.com/federacy/vulnerability-disclosure-policy
 
-[0.0.3-01]: ./images/report-inbox-0.0.3.png
+[0.0.3-01]: ./images/report-inbox-0.0.3.png?raw=true
 
 
 ### Updated/Fixed
