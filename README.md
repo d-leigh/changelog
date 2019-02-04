@@ -1,6 +1,7 @@
 # Federacy Changelog
 
-*[[1.1.2]] ,
+*[[1.2.0]] ,
+[[1.1.2]] ,
 [[1.1.1]] ,
 [[1.1.0]] , 
 [[1.0.0]] , 
@@ -17,6 +18,7 @@
 [[0.0.2]] , 
 [[0.0.1]]*
 
+[1.2.0]: #120-february-4th-2019
 [1.1.2]: #112-january-31st-2019
 [1.1.1]: #111-january-30th-2019
 [1.1.0]: #110-january-23rd-2019
@@ -33,6 +35,63 @@
 [0.0.3]: #003-august-2nd-2018
 [0.0.2]: #002-july-31st-2018
 [0.0.1]: #001-july-11th-2018
+
+
+<br/>&nbsp;
+
+
+## 1.2.0 (February 4th, 2019)
+
+
+### Added
+
+- overview of what's next after `/program` setup
+
+- explanatory copy to `/programs` and `/researchers` lists
+
+- "Visibility" tab with privacy settings to `/program` profiles
+
+- quick access to Help Center in footer of homepage and user account menu
+
+- hyperlink to new Federacy Blog in homepage footer
+
+
+### Changed
+
+- pagination controls hidden for lists with less than 10 records
+
+- error notification visibility if issue resolved with a successful `POST`
+
+- `/sign-in` routing to `/program` page for team members added to a program during setup
+
+
+### Removed
+
+- `skills` from `/researchers` list in summary card
+
+- "Sign in" and "Sign up" hyperlinks from the homepage footer
+
+
+### Fixed
+
+- pending invites not displayed immediately when created for existing `/program`
+
+
+### Design
+
+- mobile UI for `/researchers` page improved
+
+- visually separated filter controls from results for `/researchers` list
+
+- update "What we test" icons on homepage
+
+
+### Policies
+
+- new [responsiveness agreement] for programs during setup
+
+
+[responsiveness agreement]: https://help.federacy.com/article/24-program-responsiveness
 
 
 <br/>&nbsp;
