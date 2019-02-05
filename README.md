@@ -45,24 +45,26 @@
 
 ### Added
 
-- overview of what's next after `/program` setup
+- overview of what's next after `/program` setup **[[1.2.0-01]]**
 
 - explanatory copy to `/programs` and `/researchers` lists
 
-- "Visibility" tab with privacy settings to `/program` profiles
+- privacy settings to `/program` profiles under "Visibility" tab **[[1.2.0-02]]**
 
-- quick access to Help Center in footer of homepage and user account menu
+- quick access to Help Center in footer of homepage and user account menu **[[1.2.0-03]]**
 
 - hyperlink to new Federacy Blog in homepage footer
 
 
 ### Changed
 
-- pagination controls hidden for lists with less than 10 records
+- pagination controls hidden for lists with less than 10 records **[[1.2.0-04]]**
 
 - error notification visibility if issue resolved with a successful `POST`
 
 - `/sign-in` routing to `/program` page for team members added to a program during setup
+
+- "Vulnerability Disclosure Policy" tab abbreviated to "VDP" on `/program` profile
 
 
 ### Removed
@@ -88,10 +90,16 @@
 
 ### Policies
 
-- new [responsiveness agreement] for programs during setup
+- new [responsiveness agreement] for programs during setup **[[1.2.0-05]]**
 
 
 [responsiveness agreement]: https://help.federacy.com/article/24-program-responsiveness
+
+ [1.2.0-01]: ./images/program-onboarding-next-steps-1.2.0.png?raw=true
+ [1.2.0-02]: ./images/program-visibility-tab-1.2.0.png?raw=true
+ [1.2.0-03]: ./images/user-account-menu-help-center-1.2.0.png?raw=true
+ [1.2.0-04]: ./images/program-limited-pagination-controls-1.2.0.png?raw=true
+ [1.2.0-05]: ./images/program-onboarding-responsiveness-agreement-1.2.0.png?raw=true
 
 
 <br/>&nbsp;
