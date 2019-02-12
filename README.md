@@ -1,6 +1,7 @@
 # Federacy Changelog
 
-*[[1.2.0]] ,
+*[[1.2.1]] ,
+[[1.2.0]] ,
 [[1.1.2]] ,
 [[1.1.1]] ,
 [[1.1.0]] , 
@@ -18,6 +19,7 @@
 [[0.0.2]] , 
 [[0.0.1]]*
 
+[1.2.1]: #121-february-12th-2019
 [1.2.0]: #120-february-4th-2019
 [1.1.2]: #112-january-31st-2019
 [1.1.1]: #111-january-30th-2019
@@ -35,6 +37,25 @@
 [0.0.3]: #003-august-2nd-2018
 [0.0.2]: #002-july-31st-2018
 [0.0.1]: #001-july-11th-2018
+
+
+<br/>&nbsp;
+
+
+## 1.2.1 (February 12th, 2019)
+
+
+### Fixed
+
+- `/program` profile when accessed directly by entering URL
+
+
+### Design
+
+- new layout and styles for homepage **[[before][1.2.1-before]]** **[[after][1.2.1-after]]**
+
+[1.2.1-before]: ./images/homepage-after-refresh-1.1.2.png?raw=true
+[1.2.1-after]: ./images/homepage-after-redesign-1.2.1.png?raw=true
 
 
 <br/>&nbsp;
@@ -137,12 +158,12 @@
 
 - tab navigation centered on `/program` profile **[[1.1.2-02]]**
 
-- refresh of homepage **[[before]]** **[[after]]**
+- refresh of homepage **[[before][1.1.2-before]]** **[[after][1.1.2-after]]**
 
 [1.1.2-01]: ./images/homepage-schedule-a-call-1.1.2.png?raw=true
 [1.1.2-02]: ./images/program-profile-center-ab-nav-1.1.2.png?raw=true
-[before]: ./images/homepage-before-refresh-1.1.2.png?raw=true
-[after]: ./images/homepage-after-refresh-1.1.2.png?raw=true
+[1.1.2-before]: ./images/homepage-before-refresh-1.1.2.png?raw=true
+[1.1.2-after]: ./images/homepage-after-refresh-1.1.2.png?raw=true
 
 
 <br/>&nbsp;
