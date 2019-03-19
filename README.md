@@ -1,6 +1,7 @@
 # Federacy Changelog
 
-*[[1.2.1]] ,
+*[[1.3.0]] ,
+[[1.2.1]] ,
 [[1.2.0]] ,
 [[1.1.2]] ,
 [[1.1.1]] ,
@@ -19,6 +20,7 @@
 [[0.0.2]] , 
 [[0.0.1]]*
 
+[1.3.0]: #130-march-19th-2019
 [1.2.1]: #121-february-12th-2019
 [1.2.0]: #120-february-4th-2019
 [1.1.2]: #112-january-31st-2019
@@ -42,7 +44,58 @@
 <br/>&nbsp;
 
 
+## 1.3.0 (March 19th, 2019)
+
+
+### Added
+
+- `Mail` target type to `/program scopes` **[[1.3.0-01]]**
+
+- link to `/program` profile as button on program filtered view of `/reports` inbox **[[1.3.0-02]]**
+
+
+### Changed
+
+- URLs in `Program Report` to hyperlinks **[[1.3.0-03]]**
+
+- email triggers for award notifications to distinguish pending and paid
+
+
+### Removed
+
+- "researcher list" option field from `/profile` if in review queue or already listed
+
+
+### Fixed
+
+- `Cross Origin Read Blocking` errors for `googleapis.com` resources on non-auth pages
+
+- URLs contained in emails to render as hyperlinks in all email clients
+
+
+### Security
+
+- require `password re-authentication` upon update of `PayPal` field in `/profile` **[[1.3.0-04]]**   
+_reported by japzdivino_
+
+
+[1.3.0-01]: ./images/mail-target-program-scopes-dropdown-1.3.0.png
+[1.3.0-02]: ./images/button-to-program-reports-inbox-1.3.0.png
+[1.3.0-03]: ./images/urls-hyperlinked-multiobject-field-programreport-1.3.0.png
+[1.3.0-04]: ./images/password-reauthentication-paypal-email-update-researcher-profile-1.3.0.png
+
+
+<br/>&nbsp;
+
+
 ## 1.2.1 (February 12th, 2019)
+
+
+### Added
+
+- `Rejected` status option for a `/report`
+
+- `Rejected` status filter to `/reports` inbox
 
 
 ### Fixed
